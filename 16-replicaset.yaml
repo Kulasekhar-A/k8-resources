@@ -18,13 +18,13 @@ spec:
       tier: frontend
       component: frontend
     # This is pod definition, pod is subset of replicaset
-template:
-  metadata:
-    labels:
-      project: roboshop
-      purpose: rs-demo
-      tier: frontend
-      component: frontend
+  template:
+    metadata:
+      labels:
+        project: roboshop
+        purpose: rs-demo
+        tier: frontend
+        component: frontend
   spec:
     containers:
     - name: nginx
