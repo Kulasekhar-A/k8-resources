@@ -11,11 +11,10 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      labels:
-        project: roboshop
-        purpose: deployment-demo
-        tier: frontend
-        component: frontend
+      project: roboshop
+      purpose: deployment-demo
+      tier: frontend
+      component: frontend
   template:
     metadata:
       labels:
@@ -24,6 +23,6 @@ spec:
         tier: frontend
         component: frontend
     spec:
-      components:
+      containers:
       - name: nginx
         image: nginx:stable-alpine3.23-perl
